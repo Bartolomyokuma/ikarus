@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product — IKARUS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container">
+      <a href="1.html" class="logo" style="text-decoration:none;">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+        </svg>
+        <span>IKARUS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="home.html">home</a>
+        <a href="service.html">Service</a>
+        <a href="feature.html">Feature</a>
+        <a href="product.html" class="active">Product</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
+      <div class="header-buttons">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="btn">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-wrapper container">
+
+    <!-- Заголовок страницы -->
+    <section class="home-hero-status reveal">
+      <div class="status-pill">
+        <span class="pulse-indicator"></span> IKARUS Product Line
+      </div>
+      <h1 class="home-title">Готовые продукты для любых задач команды</h1>
+      <p class="home-subtitle">Пролистай карусель и выбери решение, которое закроет твою задачу быстрее всего.</p>
+    </section>
+
+    <!-- Карусель продуктов -->
+    <section class="reveal">
+      <div class="product-carousel">
+        <button class="carousel-arrow prev" id="prod-prev" aria-label="Назад">←</button>
+        <button class="carousel-arrow next" id="prod-next" aria-label="Вперёд">→</button>
+
+        <div class="product-track" id="product-track">
+
+          <div class="product-slide">
+            <div class="product-slide-media"><span class="product-slide-icon">🧭</span></div>
+            <div class="product-slide-info">
+              <h3>IKARUS CRM</h3>
+              <p>Веди клиентов от первого касания до сделки: карточки, сделки и история общения в одном окне.</p>
+              <div class="product-tags">
+                <span class="product-tag">Продажи</span>
+                <span class="product-tag">Воронки</span>
+                <span class="product-tag">Интеграции</span>
+              </div>
+              <a href="#" class="btn">Узнать больше</a>
+            </div>
+          </div>
+
+          <div class="product-slide">
+            <div class="product-slide-media"><span class="product-slide-icon">📊</span></div>
+            <div class="product-slide-info">
+              <h3>IKARUS Analytics</h3>
+              <p>Дашборды в реальном времени, автоматические отчёты и прогнозы роста без ручной сборки таблиц.</p>
+              <div class="product-tags">
+                <span class="product-tag">Дашборды</span>
+                <span class="product-tag">Прогнозы</span>
+                <span class="product-tag">Экспорт</span>
+              </div>
+              <a href="#" class="btn">Узнать больше</a>
+            </div>
+          </div>
+
+          <div class="product-slide">
+            <div class="product-slide-media"><span class="product-slide-icon">⚙️</span></div>
+            <div class="product-slide-info">
+              <h3>IKARUS Automate</h3>
+              <p>Сценарии автоматизации без кода: триггеры, условия и действия собираются как конструктор.</p>
+              <div class="product-tags">
+                <span class="product-tag">No-code</span>
+                <span class="product-tag">Триггеры</span>
+                <span class="product-tag">Вебхуки</span>
+              </div>
+              <a href="#" class="btn">Узнать больше</a>
+            </div>
+          </div>
+
+          <div class="product-slide">
+            <div class="product-slide-media"><span class="product-slide-icon">🌐</span></div>
+            <div class="product-slide-info">
+              <h3>IKARUS Community</h3>
+              <p>Пространство для общения, событий и программ лояльности твоей аудитории — под своим брендом.</p>
+              <div class="product-tags">
+                <span class="product-tag">События</span>
+                <span class="product-tag">Чаты</span>
+                <span class="product-tag">Лояльность</span>
+              </div>
+              <a href="#" class="btn">Узнать больше</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="quote-dots" id="product-dots" style="justify-content:center; margin-top:22px;"></div>
+    </section>
+
+    <!-- Метрики продукта с анимированной заливкой -->
+    <section class="reveal">
+      <div class="calc-header">
+        <h2>Продукт в цифрах</h2>
+        <p>Показатели наших решений за последние 12 месяцев</p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-header"><span>Скорость обработки задач</span><strong>95%</strong></div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" data-percent="95"></div></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-header"><span>Надёжность платформы</span><strong>99%</strong></div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" data-percent="99"></div></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-header"><span>Экономия времени команды</span><strong>87%</strong></div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" data-percent="87"></div></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-header"><span>Удовлетворённость клиентов</span><strong>92%</strong></div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" data-percent="92"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA-баннер -->
+    <section class="case-section reveal" style="padding: 0;">
+      <div class="case-flex">
+        <div class="case-badge">
+          <svg class="case-logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="case-content">
+          <p class="case-quote">«Выбери продукт под свою задачу — остальное IKARUS возьмёт на себя.»</p>
+          <a href="#" class="btn">Подобрать продукт</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Модальное окно (Login / Sign Up) -->
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal-box">
+      <button class="modal-close">&times;</button>
+      <h3 id="modal-title">Вход в систему</h3>
+
+      <form class="modal-form" id="auth-form">
+        <input type="email" placeholder="Ваш Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit" class="btn modal-submit">Продолжить</button>
+      </form>
+
+      <div id="success-message" class="success-message" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h4>Спасибо!</h4>
+        <p>Мы свяжемся с тобой в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — IKARUS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container">
+      <a href="1.html" class="logo" style="text-decoration:none;">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+        </svg>
+        <span>IKARUS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="home.html">home</a>
+        <a href="service.html">Service</a>
+        <a href="feature.html">Feature</a>
+        <a href="product.html">Product</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a href="faq.html" class="active">FAQ</a>
+      </nav>
+
+      <div class="header-buttons">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="btn">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-wrapper container">
+
+    <!-- Заголовок страницы -->
+    <section class="home-hero-status reveal">
+      <div class="status-pill">
+        <span class="pulse-indicator"></span> IKARUS Support Hub
+      </div>
+      <h1 class="home-title">Ответы на частые вопросы</h1>
+      <p class="home-subtitle">Не нашёл ответ — напиши в поддержку внизу страницы, ответим в течение часа.</p>
+    </section>
+
+    <!-- Поиск + фильтр по категориям -->
+    <section class="reveal">
+      <div class="faq-search-wrap">
+        <span class="faq-search-icon">🔍</span>
+        <input type="text" id="faq-search" class="faq-search-input" placeholder="Начни вводить вопрос, например «оплата» или «безопасность»...">
+      </div>
+
+      <div class="calc-tabs" id="faq-filters" style="margin-top: 22px;">
+        <button class="calc-tab-btn active" data-category="all">Все</button>
+        <button class="calc-tab-btn" data-category="general">Общее</button>
+        <button class="calc-tab-btn" data-category="billing">Оплата</button>
+        <button class="calc-tab-btn" data-category="security">Безопасность</button>
+        <button class="calc-tab-btn" data-category="integrations">Интеграции</button>
+        <button class="calc-tab-btn" data-category="team">Команда</button>
+      </div>
+    </section>
+
+    <!-- Аккордеон вопросов -->
+    <section class="reveal">
+      <div class="faq-list" id="faq-list">
+
+        <div class="faq-item" data-category="general">
+          <button class="faq-question">Что такое IKARUS и кому он подходит?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>IKARUS — платформа для управления проектами, автоматизации рутины и аналитики. Подходит командам от 1 до нескольких тысяч человек: стартапам, агентствам и крупным организациям.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <button class="faq-question">Нужно ли устанавливать программу на компьютер?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Нет, IKARUS работает полностью в браузере. Есть также мобильное приложение для iOS и Android для доступа на ходу.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <button class="faq-question">Можно ли попробовать платформу бесплатно?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, доступен бесплатный пробный период на 14 дней без привязки карты. После окончания можно выбрать подходящий тариф или продолжить на бесплатном плане с ограничениями.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="billing">
+          <button class="faq-question">Какие способы оплаты поддерживаются?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Принимаем оплату банковскими картами Visa и Mastercard, а также по счёту для юридических лиц с закрывающими документами.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="billing">
+          <button class="faq-question">Можно ли сменить тариф в любой момент?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, повышение или понижение тарифа доступно в любой момент из личного кабинета. Разница в стоимости пересчитывается автоматически пропорционально оставшимся дням.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="billing">
+          <button class="faq-question">Что будет, если я отменю подписку?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Доступ сохранится до конца оплаченного периода. Данные хранятся ещё 90 дней после отмены — их можно выгрузить или восстановить подписку в любой момент.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="security">
+          <button class="faq-question">Как защищены данные компании?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Все данные шифруются при передаче и хранении (TLS 1.3 и AES-256). Доступ к инфраструктуре ограничен и логируется, регулярно проводятся независимые аудиты безопасности.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="security">
+          <button class="faq-question">Поддерживается ли двухфакторная аутентификация?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, 2FA можно включить для всей команды в настройках безопасности. Также поддерживается вход через SSO для корпоративных клиентов.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="security">
+          <button class="faq-question">Где физически хранятся данные?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Данные хранятся в сертифицированных дата-центрах уровня Tier III с резервным копированием в другой географической зоне.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="integrations">
+          <button class="faq-question">С какими сервисами можно интегрировать IKARUS?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Из коробки доступны интеграции с популярными CRM, платёжными системами, мессенджерами и календарями. Для остального есть открытое API и вебхуки.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="integrations">
+          <button class="faq-question">Есть ли публичное API?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, REST API доступно на тарифах Про и выше. Документация и примеры запросов доступны в личном кабинете разработчика.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="team">
+          <button class="faq-question">Сколько участников можно добавить в команду?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>На тарифе Стандарт — до 10 участников, на тарифе Про — без ограничений. Ролями и правами доступа можно управлять для каждого отдельно.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="team">
+          <button class="faq-question">Можно ли ограничить доступ к отдельным проектам?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, у каждого проекта есть собственные настройки доступа — можно открыть его только определённым участникам или отделам.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <button class="faq-question">Есть ли поддержка на русском языке?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, интерфейс и служба поддержки полностью работают на русском языке, а также ещё на 11 других языках.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="faq-empty" id="faq-empty" style="display:none;">Ничего не найдено — попробуй другой запрос или категорию.</p>
+    </section>
+
+    <!-- CTA-баннер -->
+    <section class="case-section reveal" style="padding: 0;">
+      <div class="case-flex">
+        <div class="case-badge">
+          <svg class="case-logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="case-content">
+          <p class="case-quote">«Не нашёл ответ на свой вопрос? Наша поддержка отвечает в течение часа.»</p>
+          <a href="#" class="btn">Написать в поддержку</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Модальное окно (Login / Sign Up) -->
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal-box">
+      <button class="modal-close">&times;</button>
+      <h3 id="modal-title">Вход в систему</h3>
+
+      <form class="modal-form" id="auth-form">
+        <input type="email" placeholder="Ваш Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit" class="btn modal-submit">Продолжить</button>
+      </form>
+
+      <div id="success-message" class="success-message" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h4>Спасибо!</h4>
+        <p>Мы свяжемся с тобой в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

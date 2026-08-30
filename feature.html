@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature — IKARUS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта (идентична остальным страницам) -->
+  <header class="header">
+    <div class="container">
+      <a href="1.html" class="logo" style="text-decoration:none;">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+        </svg>
+        <span>IKARUS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="home.html">home</a>
+        <a href="service.html">Service</a>
+        <a href="feature.html" class="active">Feature</a>
+        <a href="product.html">Product</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
+      <div class="header-buttons">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="btn">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-wrapper container">
+
+    <!-- Заголовок страницы -->
+    <section class="home-hero-status">
+      <div class="status-pill">
+        <span class="pulse-indicator"></span> IKARUS Feature Set
+      </div>
+      <h1 class="home-title">Всё, что нужно для роста — в одной платформе</h1>
+      <p class="home-subtitle">Наведи курсор на карточку, чтобы узнать, что внутри каждой функции.</p>
+    </section>
+
+    <!-- Флип-карточки с ключевыми фичами -->
+    <section>
+      <div class="calc-header">
+        <h2>Ключевые фичи</h2>
+        <p>Наведи мышку на карточку — она перевернётся</p>
+      </div>
+
+      <div class="flip-grid">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-flip-icon">⚡</div>
+              <h3>Мгновенная автоматизация</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Настраивай сценарии в пару кликов — система реагирует на события за миллисекунды.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-flip-icon">🔐</div>
+              <h3>Безопасность данных</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Шифрование на уровне банков и полный контроль доступа для каждого участника команды.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-flip-icon">🧩</div>
+              <h3>Гибкие интеграции</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Подключай CRM, платёжные системы и мессенджеры без единой строчки кода.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-flip-icon">📱</div>
+              <h3>Мобильный доступ</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Управляй проектами и получай уведомления с любого устройства в любой точке мира.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-flip-icon">🧠</div>
+              <h3>ИИ-рекомендации</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Платформа сама подсказывает, какие процессы стоит оптимизировать в первую очередь.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-flip-icon">🌐</div>
+              <h3>Мультиязычность</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Интерфейс и уведомления автоматически подстраиваются под язык каждого пользователя.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Спотлайт-фича -->
+    <section class="feature-block" style="padding: 0;">
+      <div class="feature-flex">
+        <div class="feature-media">
+          <div class="media-box">
+            <svg viewBox="0 0 100 100" class="feature-svg">
+              <rect x="10" y="10" width="80" height="80" rx="15" fill="#000246" stroke="#4CAF4F" stroke-width="2"/>
+              <circle cx="50" cy="40" r="15" stroke="#22c55e" stroke-width="2" fill="none"/>
+              <path d="M 30 75 Q 50 55 70 75" stroke="#4CAF4F" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="feature-info">
+          <h2>Один центр управления вместо десяти вкладок</h2>
+          <p>Больше не нужно переключаться между сервисами — аналитика, автоматизация и коммуникация с командой живут в одном интерфейсе IKARUS.</p>
+          <a href="service.html" class="btn">Посмотреть сервисы</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Сравнение тарифов по фичам -->
+    <section class="calc-card-container">
+      <div class="calc-header">
+        <h2>Что входит в твой тариф</h2>
+        <p>Переключай, чтобы увидеть разницу между планами</p>
+      </div>
+
+      <div class="calc-tabs" id="plan-tabs">
+        <button class="calc-tab-btn active" data-plan="standard">Стандарт</button>
+        <button class="calc-tab-btn" data-plan="pro">Про</button>
+      </div>
+
+      <div class="feature-check-list" id="plan-panel"></div>
+    </section>
+
+    <!-- CTA-баннер -->
+    <section class="case-section" style="padding: 0;">
+      <div class="case-flex">
+        <div class="case-badge">
+          <svg class="case-logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="case-content">
+          <p class="case-quote">«Попробуй все фичи IKARUS бесплатно 14 дней — без карты, без обязательств.»</p>
+          <a href="#" class="btn">Начать пробный период</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Модальное окно (Login / Sign Up) -->
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal-box">
+      <button class="modal-close">&times;</button>
+      <h3 id="modal-title">Вход в систему</h3>
+
+      <form class="modal-form" id="auth-form">
+        <input type="email" placeholder="Ваш Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit" class="btn modal-submit">Продолжить</button>
+      </form>
+
+      <div id="success-message" class="success-message" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h4>Спасибо!</h4>
+        <p>Мы свяжемся с тобой в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial — IKARUS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container">
+      <a href="1.html" class="logo" style="text-decoration:none;">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+        </svg>
+        <span>IKARUS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="home.html">home</a>
+        <a href="service.html">Service</a>
+        <a href="feature.html">Feature</a>
+        <a href="product.html">Product</a>
+        <a href="testimonial.html" class="active">Testimonial</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
+      <div class="header-buttons">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="btn">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-wrapper container">
+
+    <!-- Заголовок страницы -->
+    <section class="home-hero-status reveal">
+      <div class="status-pill">
+        <span class="pulse-indicator"></span> IKARUS Voices
+      </div>
+      <h1 class="home-title">Что говорят команды, которые уже с нами</h1>
+      <p class="home-subtitle">Более 3 200 отзывов от компаний разного размера — от небольших студий до крупных организаций.</p>
+    </section>
+
+    <!-- Статистика отзывов -->
+    <section class="stats-section reveal" style="margin: 0; border-radius: 16px; border-top: none;">
+      <div class="container stats-container">
+        <div class="stat-item">
+          <span class="stat-number">4.9★</span>
+          <span class="stat-label">Средний рейтинг</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">3,200+</span>
+          <span class="stat-label">Отзывов</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Рекомендуют друзьям</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">40+</span>
+          <span class="stat-label">Стран</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Фильтр отзывов -->
+    <section class="reveal">
+      <div class="calc-header">
+        <h2>Отзывы клиентов</h2>
+        <p>Отфильтруй по типу команды, чтобы найти похожий кейс</p>
+      </div>
+
+      <div class="calc-tabs" id="testimonial-filters">
+        <button class="calc-tab-btn active" data-filter="all">Все</button>
+        <button class="calc-tab-btn" data-filter="enterprise">Крупный бизнес</button>
+        <button class="calc-tab-btn" data-filter="startup">Стартапы</button>
+        <button class="calc-tab-btn" data-filter="agency">Агентства</button>
+      </div>
+
+      <div class="testimonial-grid" id="testimonial-grid">
+
+        <div class="testimonial-card" data-category="enterprise">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">«За полгода использования IKARUS мы сократили время на отчётность вдвое. Раньше на сборку месячного отчёта уходило три дня, теперь — пара кликов.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">АК</div>
+            <div>
+              <div class="testimonial-name">Артём Ковалёв</div>
+              <div class="testimonial-role">Директор по операциям, NordLine Corp</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-category="startup">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">«Мы команда из 6 человек, и раньше рутина съедала половину недели. С автоматизацией IKARUS высвободили время на продукт, а не на таблицы.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">МЛ</div>
+            <div>
+              <div class="testimonial-name">Мария Литвинова</div>
+              <div class="testimonial-role">Основательница, Loopy App</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-category="agency">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">«Ведём 12 клиентов одновременно. Без единого центра управления проектами мы бы просто не справились с таким объёмом без потери качества.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">ДС</div>
+            <div>
+              <div class="testimonial-name">Дана Сатпаева</div>
+              <div class="testimonial-role">Управляющий партнёр, Pulse Digital</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-category="enterprise">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">«Служба безопасности одобрила внедрение после первого же аудита. Уровень контроля доступа устроил даже самых требовательных коллег из compliance.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">ИР</div>
+            <div>
+              <div class="testimonial-name">Игорь Романов</div>
+              <div class="testimonial-role">CISO, Vertex Holding</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-category="startup">
+          <div class="testimonial-stars">★★★★☆</div>
+          <p class="testimonial-quote">«Стартовали с бесплатного тарифа и за три месяца выросли до команды в 20 человек — платформа масштабировалась вместе с нами без единого сбоя.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">ТБ</div>
+            <div>
+              <div class="testimonial-name">Тимур Бекенов</div>
+              <div class="testimonial-role">CTO, Flux Robotics</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-category="agency">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">«Клиенты видят прогресс в реальном времени через общий дашборд — количество звонков «а как там дела» упало почти до нуля.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">ЕВ</div>
+            <div>
+              <div class="testimonial-name">Елена Воронова</div>
+              <div class="testimonial-role">Продюсер, Bright Studio</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-category="enterprise">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">«Интеграция с нашей внутренней CRM заняла один день. Обычно такие проекты у нас растягиваются на недели согласований.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">СП</div>
+            <div>
+              <div class="testimonial-name">Сергей Петренко</div>
+              <div class="testimonial-role">Руководитель IT, Metro Group</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-category="startup">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">«Служба поддержки отвечает быстрее, чем я успеваю допить кофе. Для маленькой команды это критично — некогда ждать часами.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">НЖ</div>
+            <div>
+              <div class="testimonial-name">Наталья Жумабекова</div>
+              <div class="testimonial-role">Операционный директор, GreenBox</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-category="agency">
+          <div class="testimonial-stars">★★★★☆</div>
+          <p class="testimonial-quote">«Отчёты для клиентов теперь генерируются автоматически с нашим брендингом. Экономим часы каждую неделю на форматировании.»</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar">РА</div>
+            <div>
+              <div class="testimonial-name">Руслан Абенов</div>
+              <div class="testimonial-role">Директор, Orbit Marketing</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="testimonial-empty" id="testimonial-empty" style="display:none;">По этому фильтру пока нет отзывов — загляни позже.</p>
+    </section>
+
+    <!-- Спотлайт-история месяца -->
+    <section class="quotes-section reveal">
+      <div class="quote-box">
+        <div class="quote-icon-badge">
+          <svg class="quote-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <polygon points="4,20 20,20 12,7" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <p class="quote-text" id="story-text">«Мы внедрили IKARUS за неделю до крупного запуска и до сих пор не верим, что раньше жили без этого. Команда получила единый источник правды по всем задачам, а руководство — прозрачную картину без лишних созвонов.»</p>
+        <span class="quote-author" id="story-author">— Алия Нурланова, Head of Ops, Skyline Group</span>
+
+        <div class="quote-nav-btns">
+          <button id="story-prev" class="q-btn">←</button>
+          <div class="quote-dots" id="story-dots"></div>
+          <button id="story-next" class="q-btn">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Видео-отзыв -->
+    <section class="reveal">
+      <div class="calc-header">
+        <h2>Смотри вживую</h2>
+        <p>Короткое видео от команды Skyline Group о переходе на IKARUS</p>
+      </div>
+
+      <div class="video-showcase" id="video-showcase">
+        <button class="play-button" id="play-button" aria-label="Воспроизвести">▶</button>
+        <p class="video-caption">Skyline Group — «Как мы ускорили запуск продукта на 3 недели»</p>
+      </div>
+    </section>
+
+    <!-- CTA-баннер -->
+    <section class="case-section reveal" style="padding: 0;">
+      <div class="case-flex">
+        <div class="case-badge">
+          <svg class="case-logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="case-content">
+          <p class="case-quote">«Присоединяйся к 3 200+ командам, которые уже доверяют IKARUS свою рутину.»</p>
+          <a href="#" class="btn">Стать клиентом</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Модальное окно (Login / Sign Up) -->
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal-box">
+      <button class="modal-close">&times;</button>
+      <h3 id="modal-title">Вход в систему</h3>
+
+      <form class="modal-form" id="auth-form">
+        <input type="email" placeholder="Ваш Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit" class="btn modal-submit">Продолжить</button>
+      </form>
+
+      <div id="success-message" class="success-message" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h4>Спасибо!</h4>
+        <p>Мы свяжемся с тобой в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

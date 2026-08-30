@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <!-- Клик по логотипу ведет на главную 1.html -->
+    <a href="1.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+      </svg>
+      <span>IKARUS</span>
+    </a>
+
+    <!-- Клик по кнопке возврата ведет на главную 1.html -->
+    <nav class="nav">
+      <a href="1.html" class="back-btn">← Вернуться на главную</a>
+    </nav>
+  </div>
+</header>
+  <div class="home-wrapper container">
+
+    <section class="home-hero-status">
+      <div class="status-pill">
+        <span class="pulse-indicator"></span> IKARUS Core v2.4 Active
+      </div>
+      <h1 class="home-title">Центр Управления Проектами</h1>
+      <p class="home-subtitle">Автоматизируйте рутину, освобождайте время для творчества и масштабируйтесь без границ.</p>
+    </section>
+
+    <section class="calc-card-container">
+      <div class="calc-header">
+        <h2>Сколько времени и бюджета спасет IKARUS?</h2>
+        <p>Выбери тип своего направления и покрути параметры</p>
+      </div>
+
+      <div class="calc-tabs">
+        <button class="calc-tab-btn active" data-preset="saas">IT / SaaS Проекты</button>
+        <button class="calc-tab-btn" data-preset="agency">Диджитал-Агентства</button>
+        <button class="calc-tab-btn" data-preset="ecommerce">E-Commerce & Ритейл</button>
+      </div>
+
+      <div class="calc-body">
+        <div class="calc-controls">
+          <div class="slider-group">
+            <div class="slider-label">
+              <span>Размер команды:</span>
+              <strong id="team-val">10 человек</strong>
+            </div>
+            <input type="range" id="team-slider" min="1" max="100" value="10" class="custom-range">
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-label">
+              <span>Рутинных задач на человека:</span>
+              <strong id="hours-val">15 ч/неделю</strong>
+            </div>
+            <input type="range" id="hours-slider" min="2" max="40" value="15" class="custom-range">
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="res-item">
+            <span class="res-title">Сбережем времени:</span>
+            <div class="res-number" id="res-hours">480 ч</div>
+            <span class="res-sub">в месяц на команду</span>
+          </div>
+          <div class="res-divider"></div>
+          <div class="res-item">
+            <span class="res-title">Сохраненный бюджет:</span>
+            <div class="res-number highlight-gold" id="res-money">$4,800</div>
+            <span class="res-sub">эквивалент фонда оплаты</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotes-section">
+      <div class="quote-box">
+        <div class="quote-icon-badge">
+          <svg class="quote-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <polygon points="4,20 20,20 12,7" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <p class="quote-text" id="quote-text">«Творчество — это способность создавать то, что оставляет след в разуме и сердце.»</p>
+        <span class="quote-author" id="quote-author">— Философия IKARUS</span>
+
+        <div class="quote-nav-btns">
+          <button id="prev-quote" class="q-btn">←</button>
+          <div class="quote-dots" id="quote-dots"></div>
+          <button id="next-quote" class="q-btn">→</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

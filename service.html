@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service — IKARUS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта (идентична главной для единого стиля) -->
+  <header class="header">
+    <div class="container">
+      <a href="1.html" class="logo" style="text-decoration:none;">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+        </svg>
+        <span>IKARUS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="home.html">home</a>
+        <a href="service.html" class="active">Service</a>
+        <a href="feature.html">Feature</a>
+        <a href="product.html">Product</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
+      <div class="header-buttons">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="btn">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-wrapper container">
+
+    <!-- Заголовок страницы -->
+    <section class="home-hero-status">
+      <div class="status-pill">
+        <span class="pulse-indicator"></span> IKARUS Service Suite
+      </div>
+      <h1 class="home-title">Все инструменты платформы в одном месте</h1>
+      <p class="home-subtitle">От автоматизации рутины до глубокой аналитики и работы с сообществом — выбери направление и посмотри, что умеет IKARUS.</p>
+    </section>
+
+    <!-- Интерактивные вкладки услуг -->
+    <section class="calc-card-container">
+      <div class="calc-header">
+        <h2>Выбери направление сервиса</h2>
+        <p>Каждое решение адаптируется под задачи твоей команды</p>
+      </div>
+
+      <div class="calc-tabs" id="service-tabs">
+        <button class="calc-tab-btn active" data-service="automation">Автоматизация</button>
+        <button class="calc-tab-btn" data-service="analytics">Аналитика</button>
+        <button class="calc-tab-btn" data-service="community">Комьюнити</button>
+      </div>
+
+      <div class="services-grid" id="service-panel"></div>
+    </section>
+
+    <!-- Как это работает -->
+    <section>
+      <div class="calc-header">
+        <h2>Как это работает</h2>
+        <p>Запуск сервиса занимает четыре простых шага</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Подключение</h3>
+          <p>Регистрируешь команду и подключаешь нужные интеграции за пару минут.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Настройка</h3>
+          <p>Выбираешь готовые сценарии автоматизации или собираешь свои.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Запуск</h3>
+          <p>Система берёт на себя рутину, а команда занимается развитием проекта.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <h3>Рост</h3>
+          <p>Следишь за метриками в реальном времени и масштабируешь то, что работает.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA-баннер -->
+    <section class="case-section" style="padding: 0;">
+      <div class="case-flex">
+        <div class="case-badge">
+          <svg class="case-logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="4,20 20,20 12,7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="12" cy="4" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="case-content">
+          <p class="case-quote">«Подключи сервис сегодня и уже через неделю увидишь, сколько времени раньше уходило впустую.»</p>
+          <a href="#" class="btn">Начать бесплатно</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Секция статистики (как на главной, для единого стиля) -->
+  <section class="stats-section">
+    <div class="container stats-container">
+      <div class="stat-item">
+        <span class="stat-number">10K+</span>
+        <span class="stat-label">Пользователей</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Проектов</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">99.9%</span>
+        <span class="stat-label">Аптайм</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Поддержка</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно (Login / Sign Up) — как на главной -->
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal-box">
+      <button class="modal-close">&times;</button>
+      <h3 id="modal-title">Вход в систему</h3>
+
+      <form class="modal-form" id="auth-form">
+        <input type="email" placeholder="Ваш Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit" class="btn modal-submit">Продолжить</button>
+      </form>
+
+      <div id="success-message" class="success-message" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h4>Спасибо!</h4>
+        <p>Мы свяжемся с тобой в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
